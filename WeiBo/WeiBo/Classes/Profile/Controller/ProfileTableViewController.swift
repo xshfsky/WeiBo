@@ -14,6 +14,10 @@ class ProfileTableViewController: BaseTableViewController {
         super.viewDidLoad()
         
         if !isLogin == true {
+            if isLogin == false {
+                visiterView?.setVisterViewInfo(false, imageNamed: "visitordiscover_image_profile", title: "登录后，你的微博、相册、个人资料会显示在这里，展示给别人")
+                return
+            }
             return
         }
         // Uncomment the following line to preserve selection between presentations

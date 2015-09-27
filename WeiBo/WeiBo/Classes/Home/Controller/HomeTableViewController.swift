@@ -12,7 +12,8 @@ class HomeTableViewController: BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if !isLogin == true {
+        if isLogin == false {
+            visiterView?.setVisterViewInfo(true, imageNamed: "visitordiscover_feed_image_house", title: "关注一些人，回这里看看有什么惊喜")
             return
         }
         
