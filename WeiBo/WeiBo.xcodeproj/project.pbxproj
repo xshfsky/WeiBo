@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18ADE6821BB81097000889A4 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6811BB81097000889A4 /* UIBarButtonItem+Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		18ADE6861BB81A2E000889A4 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6851BB81A2E000889A4 /* TitleButton.swift */; settings = {ASSET_TAGS = (); }; };
+		18ADE6891BB8218B000889A4 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6881BB8218B000889A4 /* NullViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		18ADE68B1BB84473000889A4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE68A1BB84473000889A4 /* main.swift */; settings = {ASSET_TAGS = (); }; };
+		18ADE68D1BB846C5000889A4 /* MainVCSetting.json in Resources */ = {isa = PBXBuildFile; fileRef = 18ADE68C1BB846C5000889A4 /* MainVCSetting.json */; settings = {ASSET_TAGS = (); }; };
+		18ADE68F1BB852D8000889A4 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE68E1BB852D8000889A4 /* BaseTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		18ADE6911BB85421000889A4 /* VisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6901BB85421000889A4 /* VisterView.swift */; settings = {ASSET_TAGS = (); }; };
 		18C108C01BB6812700FD8B83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C108BF1BB6812700FD8B83 /* AppDelegate.swift */; };
 		18C108C71BB6812700FD8B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C108C61BB6812700FD8B83 /* Assets.xcassets */; };
 		18C108D51BB6812700FD8B83 /* WeiBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C108D41BB6812700FD8B83 /* WeiBoTests.swift */; };
@@ -38,6 +45,13 @@
 
 /* Begin PBXFileReference section */
 		0483E0BDD09D3B21F9CFF6DE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		18ADE6811BB81097000889A4 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		18ADE6851BB81A2E000889A4 /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		18ADE6881BB8218B000889A4 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
+		18ADE68A1BB84473000889A4 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		18ADE68C1BB846C5000889A4 /* MainVCSetting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSetting.json; sourceTree = "<group>"; };
+		18ADE68E1BB852D8000889A4 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		18ADE6901BB85421000889A4 /* VisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisterView.swift; sourceTree = "<group>"; };
 		18C108BC1BB6812700FD8B83 /* WeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C108BF1BB6812700FD8B83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C108C61BB6812700FD8B83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18ADE6871BB82177000889A4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				18ADE6881BB8218B000889A4 /* NullViewController.swift */,
+				18ADE68C1BB846C5000889A4 /* MainVCSetting.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		18C108B31BB6812700FD8B83 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				18C108BF1BB6812700FD8B83 /* AppDelegate.swift */,
+				18ADE68A1BB84473000889A4 /* main.swift */,
 				18C109021BB6992300FD8B83 /* Classes */,
 				18C108C61BB6812700FD8B83 /* Assets.xcassets */,
 				18C108CB1BB6812700FD8B83 /* Info.plist */,
@@ -137,10 +161,10 @@
 		18C109021BB6992300FD8B83 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				18C109031BB6992300FD8B83 /* Discover */,
-				18C109071BB6992300FD8B83 /* Home */,
 				18C1090B1BB6992300FD8B83 /* Main */,
+				18C109071BB6992300FD8B83 /* Home */,
 				18C1090F1BB6992300FD8B83 /* Message */,
+				18C109031BB6992300FD8B83 /* Discover */,
 				18C109131BB6992300FD8B83 /* Profile */,
 				18C109171BB6992300FD8B83 /* Tools */,
 			);
@@ -182,6 +206,7 @@
 		18C109071BB6992300FD8B83 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				18ADE6871BB82177000889A4 /* Resource */,
 				18C109081BB6992300FD8B83 /* Controller */,
 				18C109091BB6992300FD8B83 /* Model */,
 				18C1090A1BB6992300FD8B83 /* View */,
@@ -207,6 +232,7 @@
 		18C1090A1BB6992300FD8B83 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18ADE6851BB81A2E000889A4 /* TitleButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				18C109181BB69CC000FD8B83 /* MainTabBarController.swift */,
+				18ADE68E1BB852D8000889A4 /* BaseTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,6 +266,7 @@
 		18C1090E1BB6992300FD8B83 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18ADE6901BB85421000889A4 /* VisterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,6 +338,7 @@
 		18C109171BB6992300FD8B83 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				18ADE6811BB81097000889A4 /* UIBarButtonItem+Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -440,6 +469,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18ADE68D1BB846C5000889A4 /* MainVCSetting.json in Resources */,
 				18C108C71BB6812700FD8B83 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,9 +545,15 @@
 			files = (
 				18C1091B1BB69CEA00FD8B83 /* HomeTableViewController.swift in Sources */,
 				18C1091F1BB69D0E00FD8B83 /* ProfileTableViewController.swift in Sources */,
+				18ADE6861BB81A2E000889A4 /* TitleButton.swift in Sources */,
+				18ADE6821BB81097000889A4 /* UIBarButtonItem+Extension.swift in Sources */,
+				18ADE6891BB8218B000889A4 /* NullViewController.swift in Sources */,
 				18C109191BB69CC000FD8B83 /* MainTabBarController.swift in Sources */,
+				18ADE68B1BB84473000889A4 /* main.swift in Sources */,
+				18ADE6911BB85421000889A4 /* VisterView.swift in Sources */,
 				18C1091D1BB69D0200FD8B83 /* MessageTableViewController.swift in Sources */,
 				18C109211BB69D7600FD8B83 /* DiscoverTableViewController.swift in Sources */,
+				18ADE68F1BB852D8000889A4 /* BaseTableViewController.swift in Sources */,
 				18C108C01BB6812700FD8B83 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -646,6 +682,7 @@
 				INFOPLIST_FILE = WeiBo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"DEBUG\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devxie.weibo.WeiBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;

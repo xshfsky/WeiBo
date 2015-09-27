@@ -8,11 +8,14 @@
 
 import UIKit
 
-class ProfileTableViewController: UITableViewController {
+class ProfileTableViewController: BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if !isLogin == true {
+            return
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

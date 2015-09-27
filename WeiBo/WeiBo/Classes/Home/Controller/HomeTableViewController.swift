@@ -8,23 +8,37 @@
 
 import UIKit
 
-class HomeTableViewController: UITableViewController {
+class HomeTableViewController: BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        if !isLogin == true {
+            return
+        }
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(target: self, action: Selector("leftBtnClick:"), imageNamed: "navigationbar_friendattention")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(target: self, action: Selector("rightBtnClick:"), imageNamed: "navigationbar_pop")
+        let titleBtn = TitleButton(type: UIButtonType.Custom)
+        titleBtn.setTitle("自我修养  ", forState: UIControlState.Normal)
+        titleBtn.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        titleBtn.setImage(UIImage(named: "navigationbar_arrow_up"), forState: UIControlState.Normal)
+        titleBtn.setImage(UIImage(named: "navigationbar_arrow_down"), forState: UIControlState.Selected)
+        titleBtn.addTarget(self, action: Selector("titleBtnClick:"), forControlEvents: UIControlEvents.TouchDown)
+        titleBtn.sizeToFit()
+        self.navigationItem.titleView = titleBtn
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func titleBtnClick(btn: UIButton) {
+        btn.selected = !btn.selected
+        YFLog(__FUNCTION__)
     }
-
+    func leftBtnClick(btn: UIButton) {
+        YFLog(__FUNCTION__)
+    }
+    
+    func rightBtnClick(btn: UIButton) {
+        YFLog(__FUNCTION__)
+    }
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
